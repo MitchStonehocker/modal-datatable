@@ -6,14 +6,14 @@ import { useState } from 'react';
 ////////////////////////////////////////////////////////////////////////////////////////////
 
 export default function useModal() {
-  const [isShowing, setIsShowing] = useState(false);
+  const [ isModalOpen, setIsModalOpen ] = useState(false);
 
   function toggle() {
-    setIsShowing(!isShowing);
+    setIsModalOpen(!setIsModalOpen);
   }
 
   return {
-    isShowing,
+    isModalOpen,
     toggle,
   }
 };

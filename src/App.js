@@ -25,7 +25,7 @@ function App() {
         <button className="button-default" onClick={toggle}>Show Table in Modal</button>        
         <Modal
           isShowing={isShowing}
-          hide={toggle}
+          toggle={toggle}
         />
       </main>
       <footer className="App-footer"><p>footer</p></footer>

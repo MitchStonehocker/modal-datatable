@@ -8,10 +8,10 @@ import DataTable from './DataTable'
 ////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////
 
-export default function Modal({ isShowing, hide }) {
+export default function Modal({ isModalOpen, toggle }) {
 
   return (
-    isShowing 
+    isModalOpen 
       ? (
         ReactDOM.createPortal(
         <Fragment>
@@ -20,7 +20,10 @@ export default function Modal({ isShowing, hide }) {
             <div className="modal">
               <div className="modal-header">
                 <h3>Modal Header</h3>
-                <button type="button" className="modal-close-button" data-dismiss="modal" aria-label="Close" onClick={hide}>
+                <button 
+                  type="button" className="modal-close-button" data-dismiss="modal" aria-label="Close" 
+                  onClick={toggle}
+                >
                   <span aria-hidden="true">&times;</span>
                 </button>
               </div>
