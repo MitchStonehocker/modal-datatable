@@ -1,5 +1,10 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+# The Goal
+This is a bare-bones DataTable and Modal using ReactJS w/o additional libraries.  All functions + hooks, no classes.  A Modal (parent) component imports a useModal component which manages the state, isModalOpen, and logic function toggle() used by the Modal.  The Modal component (when isModalOpen === true) is active and ReactDOM.createPortal(... , document.body) produces the Modal in the browser.
+
+The datatable is actually an afterthought as I wanted something to show in the Modal.  I'm still working on it.  The goal is to have fixed and adjusting table cell heights and widths as screen size changes relative to cell contents, as well as, management of overflowX & Y and use of scrolling bars.
+
 ## Available Scripts
 
 In the project directory, you can run:
