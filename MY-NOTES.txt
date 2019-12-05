@@ -1,0 +1,6 @@
+Resources:
+Modal
+- https://upmostly.com/tutorials/modal-components-react-custom-hooks
+DataTable
+- https://engineering.shopify.com/blogs/engineering/building-data-table-component-react
+
